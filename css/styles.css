@@ -11,11 +11,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: ssky;
+    src: url(./font/stratosskyengweb-black.woff);
+    src: url(./font/stratosskyengweb-black.woff2);
+}
 
 body {
     font-family: ssky;
     background-color: #004980;
 }
+
 
 .game-content {
     position: absolute;
@@ -39,6 +45,8 @@ body {
     text-align: center;
     margin: 0;
     color: #fff;
+    font-size: 35px;
+    
 }
 
 .game-section {
@@ -49,7 +57,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 480px;
-    height: 459px;
+    height: 500px;
     background: #C2F5FF;
     border-radius: 12px;
     margin-top: 160px;
@@ -60,45 +68,56 @@ body {
     
     align-items: center;
     justify-content: center;
-    flex-direction: row
+    flex-direction: column
 }
 
 .game-menu__title {
     margin: 0;
     margin-bottom: 15px;
     text-align: center;
-    color: #fff;
+    color: #004980;
+    font-size: 55px;
 }
 
-.game-menu__difficult-btn,
-.restart-btn {
+.game-menu__difficult-btn {
     width: 98px;
     height: 98px;
-    background: #FFFFFF;
-    border-radius: 12px;
     font-family: 'ssky';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 72px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    color: #0080C1;
-    border: none;
-    transition: all 0.3s;
-    margin-left: 10px;
-}
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 72px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #0080C1;
+border: none;
+border-radius: 12px;
+background: #FFFFFF
+ }
+
 
 .game-menu__difficult-btn:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.game-menu__difficult-btn,
+
 .restart-btn {
     padding: 15px 20px;
-    background-color: #5dc6ff;
+    background-color: #ffffff;
+    height: 35px;
+    width: 200px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: ssky;
+    color: #0080C1;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .game-menu__difficult-btn:hover {
@@ -121,7 +140,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: purple;
+    background: #95f51f;
     border-radius: 5px;
     transition: all 0.2s linear;
     margin: 1%;
@@ -155,4 +174,11 @@ body {
 
 .game-card:hover {
     background: #d1d1c0;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+    
+    
 }

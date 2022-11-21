@@ -7,12 +7,13 @@ export const createGameMenu = () => {
 
     gameSection.innerHTML = '';
     gameTitle.innerHTML = '';
-    title.textContent = 'Выбор сложности';
+    title.textContent = 'Выбери сложность';
     title.classList.add('game-menu__title');
     document.querySelector('.confetti').innerHTML = '';
 
     const createDifficultButton = (difficult) => {
         const button = document.createElement('button');
+       
 
         button.classList.add('game-menu__difficult-btn');
         button.textContent = `${difficult}`;
@@ -20,16 +21,17 @@ export const createGameMenu = () => {
         button.addEventListener('click', () => startGame(difficult))
 
         return button;
+       
     }
-    gameTitle.append(
-        title
-    )
+    // gameTitle.append(
+    //     title
+    // )
 
     gameSection.append(
-        
+        title,
         createDifficultButton(1),
         createDifficultButton(2),
         createDifficultButton(3),
-        createDifficultButton('pro'),
+        
     )
 }
