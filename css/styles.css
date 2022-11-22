@@ -1,8 +1,4 @@
 @import url('./confetti.css');
-@font-face {
-    font-family: ssky;
-    src: url('./fonts/stratosskyengweb-black.woff');
-}
 
 *,
 *::before,
